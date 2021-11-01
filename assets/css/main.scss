@@ -1,0 +1,340 @@
+/* latin-ext */
+@font-face {
+    font-family: 'Signika Negative';
+    font-style: normal;
+    font-weight: 300;
+    src: url('~assets/fonts/Signika-Negative-Latin-Ext-300.woff2') format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Signika Negative';
+    font-style: normal;
+    font-weight: 300;
+    src: url('~assets/fonts/Signika-Negative-Latin-300.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Signika Negative';
+    font-style: normal;
+    font-weight: 400;
+    src: url('~assets/fonts/Signika-Negative-Latin-Ext-400.woff2') format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Signika Negative';
+    font-style: normal;
+    font-weight: 400;
+    src: url('~assets/fonts/Signika-Negative-Latin-400.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+
+$media575: 575.98px;
+
+header {
+    
+    padding-top: 70px !important;
+
+    .text {
+        color:#4a4a4a;
+        font-family:Signika Negative,sans-serif;
+    }
+    .mobile-logo {
+        width: 100px;
+        height: 100px;
+
+        img {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 50%;
+        }
+    }
+    .social-media {
+        
+        float: right;
+
+        a {
+            padding-left: 15px;
+        }
+
+        svg {
+            color: #337ab7;
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: $media575) {
+            text-align: center;
+            display: block;
+            float: none;
+            margin-top: 5%;
+        }
+    }
+}
+
+.about {
+    
+    padding-top: 80px;
+
+    h1 {
+        font-size: 28px;
+        color: #4a4a4a;
+        border-bottom: 3px solid #337ab7;
+        display: inline-block;
+        font-weight: 400;
+    }
+
+    h1, p {
+        font-family: Signika Negative, sans-serif;
+    }
+
+    p {
+        font-weight: 300;
+        letter-spacing: 0.8px;
+        line-height: 28px;
+        padding-top: 10px;
+    }
+
+    a {
+        color: #337ab7;
+    }
+
+    .my-image {
+    
+        float: right;
+    
+        img {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+        }
+        
+        @media screen and (max-width: $media575) {
+            text-align: center;
+            display: block;
+            float: none;
+        }
+
+        @media screen and (max-width: 992px) {
+            .img-fluid {
+                max-width: unset;
+            }
+        }
+    }
+}
+
+.skills {
+    
+    padding-top: 80px;
+
+    h1 {
+        font-family: Signika Negative, sans-serif;
+        color: #4a4a4a;
+        font-size: 25px;
+        border-bottom: 3px solid #337ab7;
+        display: inline-block;
+        font-weight: 400;
+    }
+
+    img {
+        max-width: 100px;
+        min-width: 100px;
+    }
+}
+
+.spacer {
+    margin-top: 30px;
+}
+
+.github {
+    padding-top: 80px;
+    margin-bottom: 40px;
+
+    h1 {
+        font-family: Signika Negative, sans-serif;
+        color: #4a4a4a;
+        font-size: 25px;
+        border-bottom: 3px solid #337ab7;
+        display: inline-block;
+        font-weight: 400;
+    }
+
+    .repo-card {
+        font-family: Open Sans, Arial, sans-serif;
+        position: relative;
+        float: left;
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+        height: 100%;
+        border: none;
+
+        .background-block {
+            float: left;
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+
+            .background {
+                width: 100%;
+                vertical-align: top;
+                opacity: 1;
+                -webkit-filter: blur(0.5px);
+                filter: blur(0.5px);
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+
+        .card-content {
+            width: 100%;
+            padding: 15px 25px;
+            color: #232323;
+            float: left;
+            background: #efefef;
+            height: 50%;
+            border-radius: 0 0 5px 5px;
+            position: relative;
+            z-index: 9999;
+
+            &:before {
+                content: "";
+                background: #efefef;
+                width: 120%;
+                height: 100%;
+                left: 11px;
+                bottom: 51px;
+                position: absolute;
+                z-index: -1;
+                -webkit-transform: rotate(-13deg);
+                transform: rotate(-13deg);
+            }
+
+            h2 {
+                small {
+                    
+                    display: block;
+                    font-size: 15px;
+                    margin-top: 10px;
+
+                    a {
+                        color: #000;
+                        text-decoration: none;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+        .profile {
+            border-radius: 50%;
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+            max-width: 100px;
+            opacity: 1;
+            box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+            border: 2px solid #fff;
+            -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+            z-index: 99999;
+        }
+
+        small {
+            margin: 0 0 5px;
+            font-weight: 600;
+            font-size: 25px;
+        }
+
+        .icon-block {
+            float: left;
+            width: 100%;
+            margin-top: 15px;
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+        i {
+            display: inline-block;
+            font-size: 16px;
+            color: #232323;
+            text-align: center;
+            border: 1px solid #232323;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 50%;
+            margin: 0 5px;
+
+            &:hover {
+                background-color: #232323;
+                color: #fff;
+                text-decoration: none;
+            }
+
+        }
+    }
+}
+
+footer {
+    
+    padding-top: 80px !important;
+    margin-bottom: 50px;
+
+    a {
+        text-decoration: underline;
+        color: #4a4a4a;
+
+        &:hover {
+            color: #4a4a4a;
+        }
+    }
+
+    .ln {
+        height: 2px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 100%;
+    }
+
+    .email {
+        a {
+            text-decoration: underline;
+        }
+    }
+
+    h1 {
+        font-family: Signika Negative, sans-serif;
+        color: #4a4a4a;
+        font-size: 15px;
+        border-bottom: 3px solid #337ab7;
+        display: inline-block;
+        font-weight: 400;
+    }
+
+    p {
+        font-weight: 300;
+        font-family: Signika Negative, sans-serif;
+        letter-spacing: 0.8px;
+        line-height: 28px;
+    }
+
+    .copy {
+        padding-top: 10%;
+    }
+
+    .footer-mail {
+        float: left;
+        font-size: 17px;
+        letter-spacing: 0.2px;
+        text-align: center;
+        color: #4a4a4a;
+        font-weight: 300;
+        font-family: Signika Negative, sans-serif;
+    }
+
+
+}
